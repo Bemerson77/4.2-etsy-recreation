@@ -1,0 +1,133 @@
+
+// Bootstrap Variables
+$container-large-desktop: (1016px);
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+%main-header-height {
+  height: 80px;
+}
+%main-nav-height {
+  height: 38px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(245, 245, 241, 1);
+}
+
+// Main Header
+.main-header {
+  @extend %main-header-height;
+  background-color: rgba(255, 255, 255, 1);
+};
+.main-header-con {
+  @extend %main-header-height;
+}
+
+.main-header-inner {
+  @extend %main-header-height;
+  margin: 0 auto;
+}
+.etsy-logo {
+  display: inline-block;
+  @extend %main-header-height;
+  width: 75px;
+  margin-right: 20px;
+
+}
+.etsy-logo a {
+  color: rgba(248, 100, 0, 1);
+  display: block;
+  height: 100%;
+  width: 75px;
+  font-size: 42px;
+  font-family: "Times New Roman";
+  text-decoration: none;
+  vertical-align: top;
+
+}
+
+
+
+.form-con {
+  position: relative;
+  display: inline-block;
+  @extend %main-header-height;
+  width: 30%;
+  bottom: 23px;
+}
+
+.search-fill{
+  position: relative;
+  width: 100%;
+  top: 20px;
+}
+.search-fill #search-query {
+  width: 100%;
+
+
+}
+.form-con #search-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid rgba(46, 152, 178, 1);
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  height: 34px;
+  background-color: rgba(43, 167, 198, 1);
+  position: absolute;
+  bottom: 26px;
+  left: 215px;
+}
+.account-nav {
+  float: right;
+  @extend %main-header-height;
+}
+.account-nav li {
+  display: inline-block;
+  list-style: none;
+}
+
+// Main Nav-Bar
+.main-nav {
+  height: 43px;
+  border-top: 1px solid rgba(225, 227, 223, 1);
+  border-bottom: 1px solid rgba(219, 219, 216, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+.main-nav-inner {
+  @extend %main-nav-height;
+}
+.main-nav-con {
+  @extend %main-nav-height;
+  position: relative;
+
+}
+.main-nav-con ul {
+  @extend %main-nav-height;
+  padding-left: 0px;
+}
+
+.main-nav-con ul li {
+  @extend %main-nav-height;
+  display: inline-block;
+  list-style: none;
+  margin-right: 12px;
+
+}
+
+.main-nav-con li a {
+  font-size: 15.5px;
+  text-decoration: none;
+  line-height: 38px;
+  color: rgba(136, 136, 136, 1);
+
+}
