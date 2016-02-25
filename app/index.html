@@ -108,7 +108,7 @@
             </div>
           </div>
           <div class="images-con col-xs-9">
-            <h5>Top catagories for "yarn"</h5>
+            <h5>Top catagories for "watch"</h5>
             <div class="top-cat-imgs">
             <div class="row">
               <div class="col-xs-6">
@@ -135,7 +135,7 @@
                 <span>
                 <a href="#">All Categories</a>
                 <i class="fa fa-chevron-right"></i>
-                <span>"yarn"</span>
+                <span>"watch"</span>
                 <span>(281,756 Results)</span>
                 </span>
                 <span>
@@ -144,9 +144,19 @@
                 </span>
               </div>
               <div class="all-cat-imgs">
-                <div class="row">
-                  <!-- <div class="col-xs-4">
-                    <img src="http://unsplash.it/226/180" alt="">
+                <div class="row js-search-results">
+                  <!-- <div class="all-item-con col-xs-4">
+                    <div class="all-item-inner">
+                     <img src="http://unsplash.it/226/180" alt="">
+                     <div class="item-descrip-con">
+                       <p class="item-title">This is the item title</p>
+                       <div>
+                         <a href="#" class="manufacturer">manufacturer</a>
+                         <span class="item-price">price</span>
+                         <span class="currency_code">USD</span>
+                       </div>
+                     </div>
+                    </div>
                   </div>
                   <div class="col-xs-4">
                     <img src="http://unsplash.it/226/180" alt="">
@@ -163,11 +173,21 @@
     </div>
 
     <script id="all-cat-template" type="text/x-handlebars-template">
-
-      <div class="col-xs-4">
-        <img class="all-imgs" src="{{image}}" alt="">
+      <div class="all-item-con col-xs-4">
+        <div class="all-item-inner">
+         <img class="all-imgs" src="{{image}}" alt="">
+         <div class="item-descrip-con">
+         <p class="item-title">{{title}}</p>
+           <div>
+             <a href="#" class="manufacturer">{{manufacturer}}</a>
+             <span class="item-price">{{price}}</span>
+             <span class="currency_code">{{currency_code}}</span>
+           </div>
+         </div>
+        </div>
       </div>
     </script>
+
 
     <script src="js/bundle.js"></script>
   </body>
